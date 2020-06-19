@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import Results from './Results'
 
 class Questionnaire extends Component {
     constructor() {
@@ -26,185 +27,183 @@ class Questionnaire extends Component {
 
     render() {
         return (
-	    <form>
-		<p>Complain of aches or pains</p>
+	    <form onSubmit = {<Results/>}>
+		<p>1. Complain of aches or pains</p>
 		<label><input type = "radio" name = "q1" value = {0} onChange={this.handleChange}/>Never</label><br/>
 	        <label><input type = "radio" name = "q1" value = {1} onChange={this.handleChange}/>Sometimes</label><br/>
 		<label><input type="radio" name = "q1" value = {2} onChange={this.handleChange}/>Always</label>
 
-		<p>Spend more time alone</p>
+		<p>2. Spend more time alone</p>
 		<label><input type = "radio" name = "q2" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q2" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q2" value = {2} onChange={this.handleChange}/> Always</label>
 
-	        <p>Tire easily, little energy</p>
+	        <p>3. Tire easily, little energy</p>
 		<label><input type = "radio" name = "q3" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q3" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q3" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-	        <p>Fidgety unable to sit still</p>
+	        <p>4. Fidgety unable to sit still</p>
 		<label><input type = "radio" name = "q4" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q4" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q4" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Have trouble with teacher</p>
+		<p>5. Have trouble with teacher</p>
 		<label><input type = "radio" name = "q5" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q5" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q5" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Less interested in school</p>
+		<p>6. Less interested in school</p>
 		<label><input type = "radio" name = "q6" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q6" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q6" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Act as if driven by motor</p>
+		<p>7. Act as if driven by motor</p>
 	        <label><input type = "radio" name = "q7" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q7" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q7" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Daydream too much</p>
+		<p>8. Daydream too much</p>
 	        <label><input type = "radio" name = "q8" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q8" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q8" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Distracted easily</p>
+		<p>9. Distracted easily</p>
 	        <label><input type = "radio" name = "q9" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q9" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q9" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Are afraid of new situations</p>
+		<p>10. Are afraid of new situations</p>
 	        <label><input type = "radio" name = "q10" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q10" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q10" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Feel sad, unhappy</p>
+		<p>11. Feel sad, unhappy</p>
 	        <label><input type = "radio" name = "q11" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q11" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q11" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Are irritable, angry</p>
+		<p>12. Are irritable, angry</p>
 	        <label><input type = "radio" name = "q12" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q12" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q12" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Feel hopeless</p>
+		<p>13 .Feel hopeless</p>
 	        <label><input type = "radio" name = "q13" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q13" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q13" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Have trouble concentrating</p>
+		<p>14. Have trouble concentrating</p>
 	        <label><input type = "radio" name = "q14" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q14" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q14" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Less interested in friends</p>
+		<p>15. Less interested in friends</p>
 	        <label><input type = "radio" name = "q15" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q15" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q15" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Fight with other children</p>
+		<p>16. Fight with other children</p>
 	        <label><input type = "radio" name = "q16" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q16" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q16" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Absent from school</p>
+		<p>17. Absent from school</p>
 	        <label><input type = "radio" name = "q17" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q17" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q17" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>School grades dropping</p>
+		<p>18. School grades dropping</p>
 	        <label><input type = "radio" name = "q18" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q18" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q18" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Down on yourself</p>
+		<p>19. Down on yourself</p>
 	        <label><input type = "radio" name = "q19" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q19" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q19" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Visit doctor with doctor finding nothing wrong</p>
+		<p>20. Visit doctor with doctor finding nothing wrong</p>
 	        <label><input type = "radio" name = "q20" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q20" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q20" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Have trouble sleeping</p>
+		<p>21. Have trouble sleeping</p>
 	        <label><input type = "radio" name = "q21" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q21" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q21" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Worry a lot</p>
+		<p>22. Worry a lot</p>
 	        <label><input type = "radio" name = "q22" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q22" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q22" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Want to be with parent more than before</p>
+		<p>23. Want to be with parent more than before</p>
 	        <label><input type = "radio" name = "q23" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q23" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q23" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Feel that you are bad</p>
+		<p>24. Feel that you are bad</p>
 	        <label><input type = "radio" name = "q24" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q24" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q24" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Take unnecessary risks</p>
+		<p>25. Take unnecessary risks</p>
 	        <label><input type = "radio" name = "q25" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q25" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q25" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Get hurt frequently</p>
+		<p>26. Get hurt frequently</p>
 	        <label><input type = "radio" name = "q26" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q26" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q26" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Seem to be having less fun</p>
+		<p>27. Seem to be having less fun</p>
 	        <label><input type = "radio" name = "q27" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q27" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q27" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Act younger than children your age</p>
+		<p>28. Act younger than children your age</p>
 	        <label><input type = "radio" name = "q28" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q28" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q28" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Do not listen to rules</p>
+		<p>29. Do not listen to rules</p>
 	        <label><input type = "radio" name = "q29" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q29" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q29" value = {2}/> Always</label><br/>
 
-		<p>Do not show feelings</p>
+		<p>30. Do not show feelings</p>
 	        <label><input type = "radio" name = "q30" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q30" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q30" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Do not understand other peoples feelings</p>
+		<p>31. Do not understand other peoples feelings</p>
 	        <label><input type = "radio" name = "q31" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q31" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q31" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Tease others</p>
+		<p>32. Tease others</p>
 	        <label><input type = "radio" name = "q32" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q32" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q32" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Blame others for your troubles</p>
+		<p>33. Blame others for your troubles</p>
 	        <label><input type = "radio" name = "q33" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q33" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q33" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Take things that do not belong to you</p>
+		<p>34. Take things that do not belong to you</p>
 	        <label><input type = "radio" name = "q34" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q34" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q34" value = {2} onChange={this.handleChange}/> Always</label><br/>
 
-		<p>Refuse to share</p>
+		<p>35. Refuse to share</p>
 	        <label><input type = "radio" name = "q35" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q35" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q35" value = {2} onChange={this.handleChange}/> Always</label><br/>
-		<h3>Score: {this.state.total}</h3>
-		<h3>Attention: {this.state.attention}</h3>
-		<h3>Internalizing: {this.state.internalizing}</h3>
-		<h3>Externalizing: {this.state.externalizing}</h3>
+		<br/>
+
 		<button>Submit</button>
 		</form>
         )
