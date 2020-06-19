@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pscy-form/precache-manifest.731546ba8b3d0001e21dd21019366e28.js"
+  "/pscy-form/precache-manifest.c36b15f16d767792e1c3e85f1e904591.js"
 );
 
 self.addEventListener('message', (event) => {
