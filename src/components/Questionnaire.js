@@ -18,7 +18,7 @@ class Questionnaire extends Component {
 	this.setState(prevState => {
 	    return {
 		externalizing: prevState.q16 + prevState.q29 + prevState.q31 + prevState.q32 + prevState.q33 + prevState.q34 + prevState.q35,
-		internalizing: prevState.q11 + prevState.q13 + prevState.q19 + prevState.q27,
+		internalizing: prevState.q11 + prevState.q13 + prevState.q19 + prevState.q22 + prevState.q27,
 		attention: prevState.q4 + prevState.q7 + prevState.q8 + prevState.q9 + prevState.q14, 
 		total:  prevState.q1 + prevState.q2 + prevState.q3 + prevState.q4 + prevState.q5 + prevState.q6 + prevState.q7 + prevState.q8 + prevState.q9 + prevState.q10 + prevState.q11 + prevState.q12 + prevState.q13 + prevState.q14 + prevState.q15 + prevState.q16 + prevState.q17 + prevState.q18 + prevState.q19 + prevState.q20 + prevState.q21 + prevState.q22 + prevState.q23 + prevState.q24 + prevState.q25 + prevState.q26 + prevState.q27 + prevState.q28 + prevState.q29+prevState.q30 + prevState.q31 + prevState.q32 + prevState.q33 + prevState.q34 + prevState.q35
 	    }
@@ -204,10 +204,10 @@ class Questionnaire extends Component {
 		<label><input type="radio" name = "q35" value = {2} onChange={this.handleChange}/> Always</label><br/>
 		<br/>
 
-		<h3>Score: {this.state.total}</h3>
-		<h3>Attention: {this.state.
+		<h3>Attention: {this.state.attention}</h3>
 		<h3>Internalizing: {this.state.internalizing}</h3>
 		<h3>Externalizing: {this.state.externalizing}</h3>
+		<h3>Score: {this.state.total}</h3>
 		</form>
         )
    }
