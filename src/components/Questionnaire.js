@@ -204,7 +204,10 @@ class Questionnaire extends Component {
 		<label><input type="radio" name = "q35" value = {2} onChange={this.handleChange}/> Always</label><br/>
 		<br/>
 
-		<button>Submit</button>
+		<h3>Score: {this.state.total}</h3>
+		<h3>Attention: {this.state.
+		<h3>Internalizing: {this.state.internalizing}</h3>
+		<h3>Externalizing: {this.state.externalizing}</h3>
 		</form>
         )
    }
