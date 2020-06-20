@@ -9,3 +9,7 @@ label {
 	padding: 3px;
 	text-align: center;
 }
+
+form {
+	background-color: lightblue;
+}
