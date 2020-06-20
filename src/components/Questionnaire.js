@@ -1,11 +1,12 @@
 import React, {Component} from "react"
 import Results from './Results'
+import Conditional from './Conditional'
 
 class Questionnaire extends Component {
     constructor() {
 	super()
 	this.state = {
-		q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6: 0, q7: 0, q8: 0, q9: 0, q10: 0, q11: 0, q12: 0, q13: 0, q14: 0, q15: 0, q16: 0, q17: 0, q18: 0, q19: 0, q20: 0, q21: 0, q22: 0, q23: 0, q24: 0, q25: 0, q26: 0, q27: 0, q28: 0, q29: 0, q30: 0, q31: 0, q32: 0, q33: 0, q34: 0, q35: 0, total: 0, attention: 0, internalizing: 0, externalizing: 0
+		q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6: 0, q7: 0, q8: 0, q9: 0, q10: 0, q11: 0, q12: 0, q13: 0, q14: 0, q15: 0, q16: 0, q17: 0, q18: 0, q19: 0, q20: 0, q21: 0, q22: 0, q23: 0, q24: 0, q25: 0, q26: 0, q27: 0, q28: 0, q29: 0, q30: 0, q31: 0, q32: 0, q33: 0, q34: 0, q35: 0, total: 0, attention: 0, internalizing: 0, externalizing: 0, allFilled: false,
 	}
 	this.handleChange = this.handleChange.bind(this)
     }
@@ -27,7 +28,7 @@ class Questionnaire extends Component {
 
     render() {
         return (
-	    <form onSubmit = {<Results/>}>
+	    <form>
 		<p>1. Complain of aches or pains</p>
 		<label><input type = "radio" name = "q1" value = {0} onChange={this.handleChange}/>Never</label><br/>
 	        <label><input type = "radio" name = "q1" value = {1} onChange={this.handleChange}/>Sometimes</label><br/>
@@ -204,10 +205,9 @@ class Questionnaire extends Component {
 		<label><input type="radio" name = "q35" value = {2} onChange={this.handleChange}/> Always</label><br/>
 		<br/>
 
-		<h3>Attention: {this.state.attention}</h3>
-		<h3>Internalizing: {this.state.internalizing}</h3>
-		<h3>Externalizing: {this.state.externalizing}</h3>
-		<h3>Score: {this.state.total}</h3>
+		    <Conditional allFilled={this.state.allFilled}/>
+
+		<Results externalizing = {this.state.externalizing} attention = {this.state.attention} internalizing = {this.state.attention} total = {this.state.total}/>
 		</form>
         )
    }
